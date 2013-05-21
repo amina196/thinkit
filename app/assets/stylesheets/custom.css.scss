@@ -1,0 +1,181 @@
+@import "bootstrap";
+
+/* mixins */
+@mixin box_sizing {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+background-color: #BDA0CB;
+}
+
+body {
+  	padding-top: 60px;
+  	width: 100%;
+	height: 100%;
+	background-color: #BDA0CB;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+}
+
+.hero-unit {
+	color: 	#2E0854;
+	height: 500px;
+	background-color: #BDA0CB;
+	margin-top: 0px;
+
+}
+
+.navbar-inverse .navbar-inner {
+  background-image: linear-gradient(to bottom, #2E0854, #2E0854);
+}
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h1 {
+  font-size: 2em;
+  letter-spacing: -2px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: normal;
+  padding-top: 70px;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+span { display:inline-block; vertical-align:middle }
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  /*text-transform: uppercase;*/
+  letter-spacing: 1px;
+  padding-top: 9px;
+  line-height: 1;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: $grayLight;
+  background-color: $infoBackground;
+}
+
+footer a {
+  color: #555;
+}  
+
+footer a:hover { 
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  background-color: #025076;
+  color: white;
+  /*position:fixed;
+  top:500px;
+  left:5px;*/
+  @include box_sizing;
+
+}
+
+/* sidebar */
+
+aside {
+
+  section {
+    padding: 10px 0;
+    border: 1px solid black;
+    &:first-child {
+      border: 0;
+      padding-top: 0;
+    }
+    span {
+      display: block;
+      margin-bottom: 3px;
+      line-height: 1;
+    }
+    h1 {
+      font-size: 1.4em;
+      text-align: left;
+      letter-spacing: normal;
+      margin-bottom: 3px;
+      margin-top: 0px;
+    }
+  }
+}
+
+.btn-primary {
+  background-color: #FA9A50;
+  background-image: linear-gradient(to bottom, #FA9A50, #FA9A50);
+}
+
+form {
+  margin: auto;
+  width: 100%;
+}
+
+form .btn-hover {
+  background-color: #FA9A50; 
+}

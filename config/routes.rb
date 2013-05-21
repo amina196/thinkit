@@ -1,4 +1,14 @@
 Thinkit::Application.routes.draw do
+  
+
+  resources :users
+  match '/signup', to: 'users#new'
+  
+  
+  root to: 'users#new'
+  get "static_pages/about"
+  get "static_pages/home"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

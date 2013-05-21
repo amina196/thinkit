@@ -1,0 +1,20 @@
+<div class="center hero-unit" style: "height: 100%">
+  <h1>Use Thinkit to remember everything you learn.</h1>
+
+  <h2>
+     Everyday, all day.
+  </h2>
+
+  <%= form_for(@user) do |f| %>
+  		
+  		<%= f.text_field :name, placeholder: "Your name" %>
+
+  		<%= f.text_field :email, placeholder: "Your email" %>
+
+  		<%= f.password_field :password, placeholder: "Your password" %>
+  		
+  		<%= f.password_field :password_confirmation, placeholder: "Confirm your password" %>
+
+  		<%= f.submit "Let's go", id: "signup_button", class: "btn btn-large btn-primary" %>
+  <% end %>
+</div>
